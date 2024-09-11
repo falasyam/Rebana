@@ -1,0 +1,120 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Guideline untuk membagi dua kolom -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <!-- Kolom Kiri -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/btnTak"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintVertical_bias="0.1"
+        app:srcCompat="@drawable/rebana1"
+        android:contentDescription="Tak" 
+		android:clickable="true"
+        android:focusable="true" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/btnDum"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintTop_toBottomOf="@id/btnTak"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintVertical_bias="0.1"
+        app:srcCompat="@drawable/rebana3"
+        android:contentDescription="Dum" 
+		android:clickable="true"
+		android:focusable="true"
+		/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/btnTek"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintTop_toBottomOf="@id/btnDum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintVertical_bias="0.1"
+        app:srcCompat="@drawable/rebana2"
+        android:contentDescription="p" 
+		android:clickable="true"
+		android:focusable="true"
+		/>
+
+    <!-- Kolom Kanan -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/btnKecrek"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintVertical_bias="0.1"
+        app:srcCompat="@drawable/kecrek"
+        android:contentDescription="kecrek" 
+		android:clickable="true"
+		android:focusable="true"
+		/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/btnDrak"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintTop_toBottomOf="@id/btnKecrek"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintVertical_bias="0.1"
+        app:srcCompat="@drawable/rebana4"
+        android:contentDescription="drak" 
+		android:clickable="true"
+		android:focusable="true"
+		/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/btnBok"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintTop_toBottomOf="@id/btnDrak"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintVertical_bias="0.1"
+        app:srcCompat="@drawable/rebana1"
+        android:contentDescription="bok" 
+		android:clickable="true"
+		android:focusable="true"
+		/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
